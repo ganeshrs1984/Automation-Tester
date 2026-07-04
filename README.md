@@ -32,6 +32,18 @@
 ---
 
 # Phase 1 - Install the Required Software
+
+Before you install, let's understand the tools we'll be using.
+
+| Technology | Purpose |
+|------------|---------|
+| **VS Code** | Code Editor |
+| **Node.js** | JavaScript Runtime |
+| **npm** | Package Manager |
+| **TypeScript** | Programming Language |
+| **Playwright** | Automation Framework |
+
+
 # 🧰 1️⃣ Install Visual Studio Code (VS Code)
 
 > 💡 VS Code is the code editor where you will write and run your automation tests.
@@ -197,11 +209,11 @@ Before writing your first test, let's understand the tools we'll be using.
 
 | Technology | Purpose |
 |------------|---------|
-| **Playwright** | Automation Framework |
-| **TypeScript** | Programming Language |
 | **VS Code** | Code Editor |
 | **Node.js** | JavaScript Runtime |
 | **npm** | Package Manager |
+| **TypeScript** | Programming Language |
+| **Playwright** | Automation Framework |
 
 ---
 
