@@ -33,8 +33,34 @@
 ---
 
 # Phase 1 - Install the Required Software
+# 🧰 1️⃣ Install Visual Studio Code (VS Code)
 
-## Install Node.js
+> 💡 VS Code is the code editor where you will write and run your automation tests.
+
+
+
+##  Download VS Code
+
+Visit:
+
+https://code.visualstudio.com/docs/setup/windows
+
+###  Installation Steps
+
+1. Download **Visual Studio Code User Installer for Windows**
+
+2. Run the installer file:
+```text
+VSCodeUserSetup-{version}.exe
+```
+
+3. ⚙️ Follow the installation wizard:
+- Accept the license agreement
+- Click **Next**
+- Keep default settings
+
+---
+# ⚙️ 2️⃣ Install Node.js
 
 Visit
 
@@ -94,7 +120,7 @@ If both commands display version numbers, Node.js has been installed successfull
 
 ---
 
-# Install TypeScript
+# 🟦 3️⃣ Install TypeScript
 
 Global Installation
 
@@ -116,7 +142,7 @@ tsc -v
 
 ---
 
-# Install Playwright
+# 🎭 4️⃣ Install Playwright  
 
 ```bash
 npm init -y
