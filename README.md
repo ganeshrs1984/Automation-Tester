@@ -1,139 +1,414 @@
-# Automation-Tester
-Journey to Becoming a Great Automation Tester
+# 🚀 Playwright with TypeScript - Complete Learning Roadmap
 
-Your Journey to Becoming a Great Automation Tester 🚀
+> **Goal:** Become a professional Automation Test Engineer by learning Playwright with TypeScript from the ground up.
 
-If you follow this learning path step by step and practice consistently, you'll build a strong foundation in automation testing.
+---
 
-Let's get started!
+# 📚 Learning Journey
 
-Step 1: Choose an Automation Framework
+```text
+                Automation Testing
+                        │
+                        ▼
+              Learn TypeScript
+                        │
+                        ▼
+            Install Development Tools
+                        │
+                        ▼
+             Learn Playwright Basics
+                        │
+                        ▼
+            Build Automation Framework
+                        │
+                        ▼
+              Write Automated Tests
+                        │
+                        ▼
+           Execute • Debug • Report
+                        │
+                        ▼
+      🚀 Professional Automation Tester
+```
+---
 
-Framework: Playwright
+# Phase 1 - Install the Required Software
 
-What is Playwright?
+## Install Node.js
 
-Playwright is a modern automation framework used to test web applications. It can automate browsers just like a real user by clicking buttons, entering text, selecting options, uploading files, and validating results.
+Visit
 
-Why Playwright?
-Fast and reliable
-Supports Chrome, Edge, Firefox, and Safari
-Built-in waiting (less flaky tests)
-Supports parallel execution
-Excellent debugging tools
-Supports JavaScript and TypeScript
-Step 2: Choose a Programming Language
+https://nodejs.org/en/download
 
-Language: TypeScript
+### Installation Steps
 
-Why TypeScript?
+1. Download **Windows Installer (.msi)**
 
-TypeScript is JavaScript with additional features such as static typing.
+2. Download the latest **64-bit version**
 
-It helps you:
+Example
 
-Find errors while writing code instead of during execution.
-Write cleaner and more maintainable code.
-Get better code suggestions and auto-completion in VS Code.
-Build automation frameworks that are easier to understand and maintain.
+```
+node-v24.18.0-x64.msi
+```
 
-Most professional Playwright projects use TypeScript.
+3. Double-click the installer.
 
-Software You Need to Install
-1. Visual Studio Code (VS Code)
-What is VS Code?
+4. Accept the License Agreement.
 
-Visual Studio Code is a lightweight but powerful code editor developed by Microsoft.
+5. Click **Next**.
 
-Think of it as your workspace where you write, edit, organize, and debug your code.
+6. Verify the installation path.
 
-Why do we use VS Code?
-Write TypeScript code
-Run Playwright tests
-Debug code easily
-Manage project files
-Install helpful extensions
-Built-in terminal for running commands
+```
+C:\Program Files\nodejs\
+```
 
-In short, VS Code is where you'll spend most of your time as an automation engineer.
+7. Continue with the default options.
 
-2. Node.js
-What is Node.js?
+8. Click **Install**.
 
-Node.js is a JavaScript runtime that allows JavaScript code to run outside a web browser.
+9. Click **Finish**.
 
-Normally, JavaScript runs only inside a browser. Node.js allows you to run JavaScript and TypeScript directly on your computer.
+---
 
-Why do we need Node.js?
+## Verify Installation
 
-Node.js is required to:
+Open Command Prompt or VS Code Terminal.
 
-Run Playwright
-Install packages
-Execute TypeScript code
-Run automation tests
-Manage project dependencies
+```bash
+node -v
+
+npm -v
+```
+
+Example
+
+```text
+v24.18.0
+
+11.x.x
+```
+
+If both commands display version numbers, Node.js has been installed successfully.
+
+---
+
+# Install TypeScript
+
+Global Installation
+
+```bash
+npm install -g typescript
+```
+
+Project Installation (Skip) If Global Installation
+
+```bash
+npm install --save-dev typescript
+```
+
+Verify
+
+```bash
+tsc -v
+```
+
+---
+
+# Install Playwright
+
+```bash
+npm init -y
+
+npm install -D @playwright/test
+
+npx playwright install
+```
+
+Verify
+
+```bash
+npx playwright test
+```
+
+---
+
+# How Everything Works Together
+
+```text
+                👨‍💻 You
+                   │
+                   ▼
+        Write Code in VS Code
+                   │
+                   ▼
+          TypeScript (.ts)
+                   │
+                   ▼
+        TypeScript Compiler
+                 (tsc)
+                   │
+                   ▼
+          JavaScript (.js)
+                   │
+                   ▼
+              Node.js
+                   │
+                   ▼
+             Playwright
+                   │
+                   ▼
+      Chrome • Edge • Firefox
+                   │
+                   ▼
+       Executes Automation Tests
+```
+---
+
+# Phase 2 - Understanding the Technology Stack
+
+Before writing your first test, let's understand the tools we'll be using.
+
+| Technology | Purpose |
+|------------|---------|
+| **Playwright** | Automation Framework |
+| **TypeScript** | Programming Language |
+| **VS Code** | Code Editor |
+| **Node.js** | JavaScript Runtime |
+| **npm** | Package Manager |
+
+---
+
+# 1️⃣ Playwright
+
+## What is Playwright?
+
+Playwright is Microsoft's modern browser automation framework.
+
+It allows us to automate web browsers just like a real user.
+
+### Playwright can:
+
+- Click buttons
+- Enter text
+- Select dropdown values
+- Upload files
+- Handle alerts
+- Navigate between pages
+- Validate UI elements
+- Verify application behavior
+
+### Why Playwright?
+
+✅ Fast
+
+✅ Reliable
+
+✅ Supports
+
+- Chrome
+- Edge
+- Firefox
+- Safari
+
+✅ Auto Waiting
+
+✅ Parallel Execution
+
+✅ Powerful Debugging
+
+✅ API Testing
+
+✅ Cross Platform
+
+---
+
+# 2️⃣ TypeScript
+
+## What is TypeScript?
+
+TypeScript is JavaScript with **Static Typing**.
+
+Think of it as:
+
+```
+JavaScript + Type Safety = TypeScript
+```
+
+### Why TypeScript?
+
+It helps you
+
+- Catch errors while writing code
+- Improve readability
+- Write maintainable code
+- Get better IntelliSense
+- Build scalable automation frameworks
+
+> Most enterprise Playwright frameworks use TypeScript.
+
+---
+
+# 3️⃣ Visual Studio Code (VS Code)
+
+## What is VS Code?
+
+Visual Studio Code is Microsoft's lightweight and powerful code editor.
+
+This is where you'll:
+
+- Write code
+- Debug code
+- Run tests
+- Manage Git
+- Install extensions
+- Use the integrated terminal
+
+Simply put...
+
+> **VS Code is your workspace.**
+
+---
+
+# 4️⃣ Node.js
+
+## What is Node.js?
+
+Normally JavaScript runs only inside a browser.
+
+Node.js allows JavaScript to run directly on your computer.
+
+Think of it like this:
+
+```
+JavaScript = Language
+
+Node.js = Engine
+```
+
+### Why do we need Node.js?
+
+Node.js is required to
+
+- Run JavaScript
+- Run TypeScript
+- Run Playwright
+- Install libraries
+- Execute automation tests
 
 Without Node.js, Playwright cannot run.
 
-Think of it this way:
+---
 
-JavaScript is the language.
-Node.js is the engine that runs the language.
-3. npm (Node Package Manager)
+# 5️⃣ npm
 
-When you install Node.js, npm is installed automatically.
+## What is npm?
 
-What is npm?
+npm stands for **Node Package Manager**.
 
-npm is a package manager.
+It comes automatically when you install Node.js.
 
-It downloads and manages libraries that your project depends on.
+Its job is to install and manage project libraries.
 
-For example, you use npm to install:
+Examples
 
-Playwright
-TypeScript
-ts-node
-Other testing libraries
-
-Example commands:
-
-npm install
+```bash
 npm install playwright
+
 npm install typescript
-4. Install TypeScript
 
-Once Node.js is installed, install TypeScript using npm.
+npm install @playwright/test
+```
+---
 
-npm install -g typescript
+# Phase 3 - What You'll Learn
 
-or for a project:
+## TypeScript Fundamentals
 
-npm install --save-dev typescript
-How Everything Works Together
-                 You
-                  │
-                  ▼
-        Write Code in VS Code
-                  │
-                  ▼
-          TypeScript (.ts)
-                  │
-                  ▼
-      TypeScript Compiler (tsc)
-                  │
-                  ▼
-        JavaScript (.js)
-                  │
-                  ▼
-              Node.js
-                  │
-                  ▼
-             Playwright
-                  │
-                  ▼
-      Controls Chrome / Edge / Firefox
-                  │
-                  ▼
-          Executes Automation Tests
+- Variables
+- Data Types
+- Operators
+- Functions
+- Arrays
+- Objects
+- Interfaces
+- Array of Objects
+- Array of Interfaces
+- JSON
+- Classes
+- Async / Await
+
+---
+
+## Playwright
+
+- Project Structure
+- Test Runner
+- Locators
+- Assertions
+- Fixtures
+- Hooks
+- Page Object Model
+- API Testing
+- Data-Driven Testing
+- Parallel Execution
+- Reporting
+- Screenshots
+- Videos
+- Trace Viewer
+
+---
+
+## Framework Development
+
+You'll build a professional framework with
+
+- Page Object Model
+- Utility Classes
+- Test Data Management
+- Configuration Management
+- Reporting
+- Logging
+- CI/CD Integration
+- GitHub Actions
+- Best Practices
+
+---
+
+# Learning Tips
+
+- Practice every day.
+- Understand **why**, not just **how**.
+- Build mini projects.
+- Read Playwright documentation.
+- Debug your own code.
+- Learn from your mistakes.
+
+---
+
+# Final Goal
+
+By the end of this course, you'll be able to
+
+✅ Build a professional Playwright framework
+
+✅ Write clean TypeScript
+
+✅ Automate real-world applications
+
+✅ Debug failures
+
+✅ Generate reports
+
+✅ Execute tests in CI/CD
+
+✅ Work confidently as an Automation Test Engineer
+
+---
+
+# 🎉 Happy Learning!
+
+> **"Great automation engineers don't just know the syntax—they understand how every tool works together to build reliable, maintainable, and scalable automation frameworks."**
+
+**Let's build that understanding together, one step at a time. 🚀**
