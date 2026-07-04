@@ -1,7 +1,6 @@
 # 🚀 Playwright with TypeScript - Complete Learning Roadmap
 
 > **Goal:** Become a professional Automation Test Engineer by learning Playwright with TypeScript from the ground up.
-
 ---
 
 # 📚 Learning Journey
