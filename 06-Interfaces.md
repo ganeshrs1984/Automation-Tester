@@ -20,3 +20,8 @@ const person: Person = {
     age: 43
 };
 ```
+### Think of an Interface as
+
+A blueprint.
+
+It tells TypeScript what properties an object should contain.
