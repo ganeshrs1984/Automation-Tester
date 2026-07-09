@@ -19,3 +19,5 @@ class Person {
 
 }
 ```
+
+Methods are simply functions that belong to a class.
